@@ -1,9 +1,11 @@
 provider "aws" {
-  region = "us-east-1"  # Ensure this is set to the correct region for your S3 bucket
+  region = "us-east-1"
+  access_key = "AKIATNE64FXHHQVJSZTW"
+  secret_key = "pvHjaguix42MKPLY+p2IQ+/LZWMcYd+EkH5ZsaIr"
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "awss3cfdt"
+  bucket = "sumdists3cf"
   acl    = "private"
 
   versioning {
